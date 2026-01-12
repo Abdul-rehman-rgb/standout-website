@@ -5,16 +5,6 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, Plane } from "lucide-react";
 import AnimatedButton from "./ui/AnimatedButton";
 
-// Dummy images - Replace with your actual paths
-const projects = [
-  { id: 1, title: "Prime Hosting", size: "small-top-left" },
-  { id: 2, title: "Cloud Realm Corner", size: "large-center" },
-  { id: 3, title: "Summit Bank App", size: "small-top-right" },
-  { id: 4, title: "Elevate Experience", size: "small-bottom-left" },
-  { id: 5, title: "Essential Defense", size: "wide-bottom-center" },
-  { id: 6, title: "Power Up Crypto", size: "small-bottom-right" },
-];
-
 export default function Works() {
   return (
     <section className="bg-black text-white py-20 px-4 md:px-10 overflow-hidden">

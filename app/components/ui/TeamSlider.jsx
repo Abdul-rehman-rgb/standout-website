@@ -5,13 +5,14 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import { motion } from "framer-motion";
 import { MoveRight, MoveLeft, Plane } from "lucide-react";
+import Image from "next/image";
 import AnimatedButton from "./AnimatedButton";
 
 const teamMembers = [
-  { name: "Oliver Bennett", role: "Director of Strategy", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800" },
-  { name: "Sophia Mitchell", role: "Chief Technology Officer", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800" },
-  { name: "Liam Johnson", role: "VP Product Management", img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800" },
-  { name: "Emma Thompson", role: "Lead Product Designer", img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800" },
+  { name: "Oliver Bennett", role: "Director of Strategy", img: "/images/team1.jpg" },
+  { name: "Sophia Mitchell", role: "Chief Technology Officer", img: "/images/team2.jpg" },
+  { name: "Liam Johnson", role: "VP Product Management", img: "/images/team3.jpg" },
+  { name: "Emma Thompson", role: "Lead Product Designer", img: "/images/team4.jpg" },
 ];
 
 const TeamSlider = () => {
@@ -77,10 +78,11 @@ const TeamSlider = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <div className="relative aspect-[4/5] overflow-hidden rounded-[24px] mb-6">
-                  <img
+                  <Image
                     src={member.img}
                     alt={member.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
                 <div className="flex flex-col gap-1">

@@ -87,7 +87,7 @@ export default function About() {
                   <br /> completed
                 </h4>
                 <p className="text-sm sm:text-base md:text-[16px] text-[#5D5D5D] leading-[20px] sm:leading-[22px] font-normal text-left">
-                  We've delivered 50+ projects that help companies generate real
+                  We&apos;ve delivered 50+ projects that help companies generate real
                   results.
                 </p>
               </div>

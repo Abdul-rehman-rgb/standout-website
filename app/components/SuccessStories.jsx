@@ -1,10 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { Star, ArrowUp, Plane } from "lucide-react";
-import user from "../../public/images/user.jpeg";
-import AnimatedButton from "./ui/AnimatedButton";
+import { Star, Plane } from "lucide-react";
 import Heading from "./ui/Heading";
 import FAQSection from "./FAQ";
 
@@ -23,7 +20,7 @@ const SuccessStories = () => {
             </h2>
           </div>
           <div className="text-[#8e8e8e] text-sm md:text-base max-w-[200px] self-end text-right leading-snug">
-            We've delivered 50+ projects that help companies generate real
+            We&apos;ve delivered 50+ projects that help companies generate real
             results.
           </div>
         </div>
@@ -39,7 +36,7 @@ const SuccessStories = () => {
           {/* Dark Overlay with Blur Effect */}
           <div className="absolute inset-x-4 bottom-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-[24px] p-6 text-white">
             <p className="text-sm md:text-base font-normal leading-relaxed mb-6">
-              Kenzo's Webflow development skills are unmatched! They built a
+              Kenzo&apos;s Webflow development skills are unmatched! They built a
               fast, interactive, and visually stunning website
             </p>
             <div>
@@ -116,7 +113,7 @@ const SuccessStories = () => {
         
       <Heading text="Have Any Questions?" />
       <p className="text-center text-[#555555] max-w-[600px] mx-auto mb-10">
-        Got questions? I'm here for you 24/7, no matter where you are, ready to
+        Got questions? I&apos;m here for you 24/7, no matter where you are, ready to
         provide support and answers anytime.
       </p>
       <a

@@ -32,8 +32,8 @@ const NotFound = () => {
             Lost in Space?
           </h2>
           <p className="text-gray-400 max-w-md mx-auto mb-10 text-sm md:text-base leading-relaxed">
-            The page you are looking for doesn't exist or has been moved. 
-            Don't worry, even the best studios get lost sometimes.
+            The page you are looking for doesn&apos;t exist or has been moved. 
+            Don&apos;t worry, even the best studios get lost sometimes.
           </p>
         </motion.div>
 

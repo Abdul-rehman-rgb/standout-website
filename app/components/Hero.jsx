@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import bg from "../../public/images/hero.gif";
 import Image from "next/image";
 import user from "../../public/images/user.jpeg";
