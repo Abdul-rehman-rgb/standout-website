@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import logo from "../../public/images/logo.png";
 import { Plane, Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -17,7 +18,7 @@ export default function Navbar() {
     >
       <div className="max-w-[1390px] mx-auto flex items-center justify-between">
         {/* Left - Logo */}
-        <div className="flex items-center">
+        <Link href="/" className="flex items-center">
           <Image
             src={logo}
             alt="Standou-studioz Logo"
@@ -25,22 +26,22 @@ export default function Navbar() {
             height={60}
             className="object-contain w-32 sm:w-40 md:w-[205px] h-auto"
           />
-        </div>
+        </Link>
 
         {/* Center - Nav Items (Desktop) */}
         <div className="hidden lg:flex justify-evenly space-x-8 xl:space-x-20 text-[16px] text-[#171717] font-medium">
-          <a href="#" className="hover:text-gray-600 transition">
+          <Link href="/" className="hover:text-gray-600 transition">
             Home
-          </a>
-          <a href="#" className="hover:text-gray-600 transition">
+          </Link>
+          <Link href="/about" className="hover:text-gray-600 transition">
             About
-          </a>
-          <a href="#" className="hover:text-gray-600 transition">
+          </Link>
+          <Link href="/projects" className="hover:text-gray-600 transition">
             Projects
-          </a>
-          <a href="#" className="hover:text-gray-600 transition">
+          </Link>
+          <Link href="/blog" className="hover:text-gray-600 transition">
             Blog
-          </a>
+          </Link>
         </div>
 
         <div className="hidden md:flex justify-end items-center space-x-3">
@@ -54,8 +55,8 @@ export default function Navbar() {
             </span>
           </a> */}
 
-          <a
-            href="#"
+          <Link
+            href="/contact"
             className="group relative inline-flex items-center gap-4 px-6 py-3 bg-black border border-black text-white rounded-full transition-colors duration-500 hover:bg-white hover:text-black [perspective:1000px]"
           >
             {/* 3D Flip Text Container */}
@@ -75,7 +76,7 @@ export default function Navbar() {
             <div className="relative z-10 p-2 rounded-full bg-white text-black transition-all duration-500 group-hover:bg-black group-hover:text-white group-hover:rotate-[360deg]">
               <Plane className="w-4 h-4" />
             </div>
-          </a>
+          </Link>
         </div>
 
         <button
@@ -95,34 +96,39 @@ export default function Navbar() {
           className="md:hidden mt-4 pb-4 border-t border-gray-200"
         >
           <div className="flex flex-col space-y-4 pt-4">
-            <a
-              href="#"
+            <Link
+              href="/"
+              onClick={() => setIsMenuOpen(false)}
               className="text-[#171717] font-medium hover:text-gray-600 transition"
             >
               Home
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/about"
+              onClick={() => setIsMenuOpen(false)}
               className="text-[#171717] font-medium hover:text-gray-600 transition"
             >
               About
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/projects"
+              onClick={() => setIsMenuOpen(false)}
               className="text-[#171717] font-medium hover:text-gray-600 transition"
             >
               Projects
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/blog"
+              onClick={() => setIsMenuOpen(false)}
               className="text-[#171717] font-medium hover:text-gray-600 transition"
             >
               Blog
-            </a>
+            </Link>
             <div className="flex items-center gap-4 pt-2">
               
-          <a
-            href="#"
+          <Link
+            href="/contact"
+            onClick={() => setIsMenuOpen(false)}
             className="group relative inline-flex items-center gap-4 px-6 py-3 bg-black border border-black text-white rounded-full transition-colors duration-500 hover:bg-white hover:text-black [perspective:1000px]"
           >
             {/* 3D Flip Text Container */}
@@ -142,7 +148,7 @@ export default function Navbar() {
             <div className="relative z-10 p-2 rounded-full bg-white text-black transition-all duration-500 group-hover:bg-black group-hover:text-white group-hover:rotate-[360deg]">
               <Plane className="w-4 h-4" />
             </div>
-          </a>
+          </Link>
             </div>
           </div>
         </motion.div>

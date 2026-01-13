@@ -6,7 +6,7 @@ import { MoveUpRight } from "lucide-react"; // Arrow icon ke liye
 
 export default function Hero() {
   return (
-    <section className="max-w-[1390px] mx-auto mt-20 sm:mt-24 md:mt-30">
+    <section className="max-w-[1390px] mx-auto mt-20 sm:mt-24 md:mt-30 mb-5">
       <div
         className="relative min-h-[60vh] sm:h-[70vh] md:h-[80vh] w-full bg-cover bg-center bg-no-repeat overflow-hidden rounded-2xl sm:rounded-3xl md:rounded-4xl"
         style={{ backgroundImage: `url(${bg.src})` }}

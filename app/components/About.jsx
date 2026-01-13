@@ -7,22 +7,23 @@ import logo1 from "../../public/images/logos/1.png";
 import logo2 from "../../public/images/logos/2.png";
 import logo3 from "../../public/images/logos/3.png";
 import AnimatedButton from "./ui/AnimatedButton";
+import ScrollRevealParagraph from "@/components/smoothui/scroll-reveal-paragraph";
 
 export default function About() {
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-[#fafafa] text-center px-4 sm:px-6 md:px-8 lg:px-10">
-      <div className="max-w-[1390px] mx-auto">
-        <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 sm:gap-9 mb-8 sm:mb-12 md:mb-16">
+    <section className="py-12 sm:py-16 md:py-20 text-center px-4 sm:px-6 md:px-8 lg:px-10">
+      <div className="max-w-[1390px] mx-auto bg-[#fafafa] rounded-[32px]">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12 md:mb-20 px-4 md:px-10 max-w-[1390px] mx-auto w-full">
+          {/* Left Side: Badge */}
           <div className="shrink-0">
-            <AnimatedButton text="About Us" Icon={Plane} href="#about" />
+            <AnimatedButton text="About us" Icon={Plane} href="#about" />
           </div>
 
-          <div className="flex justify-center sm:justify-start">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-semibold text-[#171717] text-center sm:text-left">
-              Results for every project,
-              <br />
-              with a focus on design and functionality
-            </h2>
+          {/* Right Side: Heading with Large Spacing */}
+          <div className="w-full md:max-w-[80%] lg:max-w-[950px]">
+            <ScrollRevealParagraph
+              paragraph="Results for every project, with a focus on design and functionality"
+            />
           </div>
         </div>
 
@@ -87,8 +88,8 @@ export default function About() {
                   <br /> completed
                 </h4>
                 <p className="text-sm sm:text-base md:text-[16px] text-[#5D5D5D] leading-[20px] sm:leading-[22px] font-normal text-left">
-                  We&apos;ve delivered 50+ projects that help companies generate real
-                  results.
+                  We&apos;ve delivered 50+ projects that help companies generate
+                  real results.
                 </p>
               </div>
               <div className="bg-white rounded-[12px] p-4 sm:p-5 md:p-6 space-y-6 sm:space-y-8 md:space-y-40 overflow-hidden">

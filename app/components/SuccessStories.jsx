@@ -2,8 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { Star, Plane } from "lucide-react";
-import Heading from "./ui/Heading";
-import FAQSection from "./FAQ";
+import ContactFAQ from "./ContactFAQ";
 
 const SuccessStories = () => {
   return (
@@ -109,38 +108,9 @@ const SuccessStories = () => {
         </div>
       </div>
 
-  <div className="flex-col justify-center items-center text-center mt-20 px-4 md:px-0">
-        
-      <Heading text="Have Any Questions?" />
-      <p className="text-center text-[#555555] max-w-[600px] mx-auto mb-10">
-        Got questions? I&apos;m here for you 24/7, no matter where you are, ready to
-        provide support and answers anytime.
-      </p>
-      <a
-        href="#"
-        className="group relative inline-flex items-center gap-4 px-6 py-3 bg-[#fafafa] border border-black text-black rounded-full transition-colors duration-500 hover:bg-black hover:text-white [perspective:1000px]"
-      >
-        {/* 3D Flip Text Container */}
-        <div className="relative h-6 w-24 [transform-style:preserve-3d] transition-transform duration-500 group-hover:[transform:rotateX(-90deg)]">
-          {/* Front Face (White text on Black background initially) */}
-          <span className="absolute inset-0 flex items-center justify-start [backface-visibility:hidden]">
-            Contact Us
-          </span>
+      <ContactFAQ />
 
-          {/* Bottom Face (Black text - appears when button turns white on hover) */}
-          <span className="absolute inset-0 flex items-center justify-start [transform:rotateX(90deg)translateZ(12px)] [backface-visibility:hidden]">
-            Contact Us
-          </span>
-        </div>
-
-        {/* Icon Circle */}
-        <div className="relative z-10 p-2 rounded-full bg-black text-white transition-all duration-500 group-hover:bg-white group-hover:text-black group-hover:rotate-[360deg]">
-          <Plane className="w-4 h-4" />
-        </div>
-      </a>
-      <FAQSection />
-      
-  </div>
+  
     </section>
   );
 };
