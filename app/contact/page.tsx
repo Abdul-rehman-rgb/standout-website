@@ -3,6 +3,7 @@ import PageLayout from "../components/PageLayout";
 import { Plane, Mail, Phone, MapPin, Send } from "lucide-react";
 import AnimatedButton from "../components/ui/AnimatedButton";
 import { useState } from "react";
+import ContactFAQ from "../components/ContactFAQ";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -174,6 +175,7 @@ export default function ContactPage() {
               </form>
             </div>
           </div>
+          <ContactFAQ />
         </div>
       </section>
     </PageLayout>
