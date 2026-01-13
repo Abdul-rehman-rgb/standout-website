@@ -1,3 +1,5 @@
+"use client";
+
 import PageLayout from "../components/PageLayout";
 import { Plane, Code, Palette, Smartphone, Search, Zap } from "lucide-react";
 import AnimatedButton from "../components/ui/AnimatedButton";
