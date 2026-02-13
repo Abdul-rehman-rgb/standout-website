@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Plane } from "lucide-react";
 import AnimatedButton from "./ui/AnimatedButton";
-
 export default function Works() {
   return (
     <section className="bg-black text-white py-20 px-4 md:px-10 overflow-hidden">
@@ -28,14 +27,14 @@ export default function Works() {
           <ProjectCard 
             className="md:col-span-1 md:row-span-1" 
             title="Prime Hosting" 
-            img="/images/1.jpg" 
+            img={`/images/1.jpg`}
           />
 
           {/* 2. Cloud Realm (Center Large) */}
           <ProjectCard 
             className="md:col-span-2 md:row-span-2" 
             title="Cloud Realm Corner" 
-            img="/images/1.jpg" 
+            img={`/images/1.jpg`}
             isLarge
           />
 
@@ -43,35 +42,35 @@ export default function Works() {
           <ProjectCard 
             className="md:col-span-1 md:row-span-1" 
             title="Summit Bank" 
-            img="/images/1.jpg" 
+            img={`/images/1.jpg`}
           />
 
           {/* 4. Elevate Hosting (Bottom Left) */}
           <ProjectCard 
             className="md:col-span-1 md:row-span-1" 
             title="Elevate Experience" 
-            img="/images/1.jpg" 
+            img={`/images/1.jpg`}
           />
 
           {/* 5. Essential Defense (Bottom Right Side) */}
           <ProjectCard 
             className="md:col-span-1 md:row-span-1" 
             title="Digital Realm" 
-            img="/images/1.jpg" 
+            img={`/images/1.jpg`}
           />
 
           {/* 6. Crypto Journey (Wide Bottom) */}
           <ProjectCard 
             className="md:col-span-2 md:row-span-1" 
             title="Crypto Journey" 
-            img="/images/1.jpg" 
+            img={`/images/1.jpg`}
           />
 
           {/* 7. Drone Settings (Full Height Right) */}
           <ProjectCard 
             className="md:col-span-2 md:row-span-1" 
             title="Drone Settings" 
-            img="/images/1.jpg" 
+            img={`/images/1.jpg`}
           />
         </div>
       </div>

@@ -9,10 +9,10 @@ import Image from "next/image";
 import AnimatedButton from "./AnimatedButton";
 
 const teamMembers = [
-  { name: "Oliver Bennett", role: "Director of Strategy", img: "/images/team1.jpg" },
-  { name: "Sophia Mitchell", role: "Chief Technology Officer", img: "/images/team2.jpg" },
-  { name: "Liam Johnson", role: "VP Product Management", img: "/images/team3.jpg" },
-  { name: "Emma Thompson", role: "Lead Product Designer", img: "/images/team4.jpg" },
+  { name: "Oliver Bennett", role: "Director of Strategy", img: `/images/team1.jpg` },
+  { name: "Sophia Mitchell", role: "Chief Technology Officer", img: `/images/team2.jpg` },
+  { name: "Liam Johnson", role: "VP Product Management", img: `/images/team3.jpg` },
+  { name: "Emma Thompson", role: "Lead Product Designer", img: `/images/team4.jpg` },
 ];
 
 const TeamSlider = () => {

@@ -9,22 +9,22 @@ import Heading from "./ui/Heading";
 const services = [
   {
     title: "Web Design & Development",
-    image: "/images/1.jpg",
+    image: `/images/1.jpg`,
     categories: ["Web Design", "Web development", "No code", "Webflow", "Style guide"],
   },
   {
     title: "UX Strategy & Research",
-    image: "/images/1.jpg",
+    image: `/images/1.jpg`,
     categories: ["Web Design", "Web development", "No code", "Webflow", "Style guide"],
   },
   {
     title: "Mobile App Design",
-    image: "/images/1.jpg",
+    image: `/images/1.jpg`,
     categories: ["Web Design", "Web development", "No code", "Webflow", "Style guide"],
   },
   {
     title: "Branding & Identity",
-    image: "/images/1.jpg",
+    image: `/images/1.jpg`,
     categories: ["Web Design", "Web development", "No code", "Webflow", "Style guide"],
   },
 ];
